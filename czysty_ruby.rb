@@ -214,6 +214,40 @@ puts klientss.has_value?("Kowalski" ) # spr. czy istnieje taka wartosc
 puts " "
 puts "OBIEKTY TYPU RANGE"
 
+puts ocenyyy = 1..6   # To nasz zakres
+puts ocenyyy.class
+puts ocenyyy.begin    # spr. początek naszego zakresu - czyli begin
+puts ocenyyy.end      # spr. koniec naszego zakresu
+puts ocenyyy.first
+puts ocenyyy.last
+puts uczen = 1...7    # sprubujmy przypisac zakres ocen od 1 do 7, trzy kropi naszego zakresu zaczyna sie od 1 ale 7 nie wchodzi w nasz zakres
+puts uczen.class
+puts uczen.end
+puts uczen.last
+puts uczen.include?(1)
+puts uczen.include?(6)
+puts uczen.include?(7)
+puts uczen.include?(6.5)
+puts uczen.include?(6.999999)
+
+puts " "
+print oceny_tablica = [* ocenyyy]  # I tu nasz rubi wstawil nasz zakres z ocen
+
+puts " "
+print  tablica_uczen = [*uczen]
+puts " "
+print alfabet = "a".."z"
+print tablica_alfabet = [*alfabet] # I tu bedzie nasz zakres
+puts " "
+print zakres_liczbowy = 1..20
+puts " "
+print zakres_liczbowy.to_a
 
 
+puts " "
+puts " "
+puts "OBIEKTY TYPU CONSTANT" # proby zmiany warstosci stalych
+print zmienna = 123
+puts " "
+puts stala = 100
 
