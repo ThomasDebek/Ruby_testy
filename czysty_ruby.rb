@@ -249,5 +249,13 @@ puts " "
 puts "OBIEKTY TYPU CONSTANT" # proby zmiany warstosci stalych
 print zmienna = 123
 puts " "
-puts stala = 100
+puts Stala = 100   # Stałe zawsze z wielkiej litery
+
+puts Stala = 200    # tutaj Ruby przy próbie wartości Stalej zgłóśi ale ją zmieni
+
+
+
+puts " "
+puts "WARUNKI I PETLE"
+puts " "
 
