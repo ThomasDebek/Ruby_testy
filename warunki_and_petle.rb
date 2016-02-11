@@ -81,10 +81,55 @@ end
 
 c = Petllle.new
 puts c.cos
-puts c.cos2
+
 puts c.cos3
 
 
+class Tabliczka_monzenia
+ def cos
+   x = 0
+   y = 0
+
+   for x in (1..10)
+     for y in (1..10)
+       z = x * y
+       if z <= 9
+         print "|  #{z} |"
+       else
+         print "| #{z} |"
+       end
+     end
+     print x
+   end
+ end
+end
+
+ta = Tabliczka_monzenia.new
+puts ta.cos
+
+
+# PETLE WHILE ORAZ UNTIL
+puts "PETEA WHILE ORAZ UNTIL"
+
+class Petla_While_Until
+  def test
+    x = 0
+    puts "ok- warunek spelniony" if x < 3
+    x+=1
+    puts "ok" if x < 3
+  end
+
+  # Zamiast tej petli mozemy zmienic na inna - czyli dopuki warunek nie jest spelniony
+  def test_2
+    x = 0
+    puts x
+    puts x +=1 while x < 3
+  end
+end
+
+cP = Petla_While_Until.new
+puts cP.test
+puts cP.test_2
 
 
 
