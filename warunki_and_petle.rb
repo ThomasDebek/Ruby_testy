@@ -120,17 +120,93 @@ class Petla_While_Until
   end
 
   # Zamiast tej petli mozemy zmienic na inna - czyli dopuki warunek nie jest spelniony
+  puts "test_2"
   def test_2
     x = 0
     puts x
     puts x +=1 while x < 3
+  end
+
+  def test_3
+    x = 0
+    while x < 10
+      x +=1
+      puts "Witaj uczestniku nr: " +x.to_s
+    end
+  end
+
+  def test_4
+    x = 0
+    until x >= 10
+      x += 1
+      puts "Witaj nowy uczestniku; " + x.to_s
+    end
   end
 end
 
 cP = Petla_While_Until.new
 puts cP.test
 puts cP.test_2
+puts cP.test_3
+puts cP.test_4
 
 
+puts " "
+puts " PETLA LOOP DO   -  bardzo ciekawa betla, uzywamy w niej slowa BREAK"
 
+class Petla_loop_do
+  def test
+    x = 0
+    loop do
+      break if x > 10 # INNYMI SLOWY PRZERWIJ AZ DOJDZIESZ DO 10 - JEZELI TEGO NIE DAMY - TO BEDZIE NISKĄCZON PETLA
+      x += 1
+      puts "Witaj nowy uczestniu petli loop"
+    end
+  end
+
+  def test_2
+    x = 0
+    loop do
+      break if x > 10
+      x += 1
+      next if x == 5    # W tym momęcie pomija nam element o numerze 5
+      puts "Ala ma kota " + x.to_s
+    end
+  end
+end
+
+pl = Petla_loop_do.new
+puts pl.test
+puts pl.test_2
+
+
+puts " "
+puts "ITERATORY  - Pozwalają na sekwencyjny dostep do obiektu"
+class Iteratory
+  def test
+    x = 0
+    while x < 3
+      puts "Nasz Iterator "
+      x += 1
+    end
+  end
+  def test_2
+    4.times do
+      puts "Mniej pracy"
+    end
+  end
+
+  def test_3
+    5.upto(7) {puts "Yes!"}   # Tu nam wyswietli od zadanje wartosci czyli 5 do ządanej czyli do 7
+  end
+
+  def test_4
+
+  end
+end
+
+it = Iteratory.new
+puts it.test
+puts it.test_2
+puts it.test_3
 
