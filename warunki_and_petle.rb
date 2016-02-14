@@ -197,11 +197,20 @@ class Iteratory
   end
 
   def test_3
-    5.upto(7) {puts "Yes!"}   # Tu nam wyswietli od zadanje wartosci czyli 5 do ządanej czyli do 7
+    5.upto(7) {puts "Yes!"}   # Tu nam wyswietli od zadane wartosci czyli 5 do ządanej czyli do 7
   end
 
-  def test_4
+  def test_4     # z tej metody liczy nam od 2ch w górę czyli do 4   - ZAJEBISTE TO JEST
+    2.upto(4) do |numeruj|
+      puts "Kolejne liczby: " + numeruj.to_s
+    end
+  end
 
+  def test_5
+    imiona = ["ewa", "ola", "ala", "jan"]
+    imiona.each do |osoba|
+      puts osoba
+    end
   end
 end
 
@@ -209,4 +218,7 @@ it = Iteratory.new
 puts it.test
 puts it.test_2
 puts it.test_3
+puts it.test_4
+puts it.test_5
+
 
