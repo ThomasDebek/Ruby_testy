@@ -222,3 +222,59 @@ puts it.test_4
 puts it.test_5
 
 
+puts " "
+puts "BLOKI KODU"
+class Bloki_kodu
+  def test
+    (1..5).each do |x|
+       puts "aaa " + x.to_s
+    end
+  end
+
+  def test_2
+    ["ala", "ewa", "ola"].each {|imie| puts imie}
+  end
+
+  def test_3
+    imiona = ["ala", "ewa", "ola"]
+    imiona.each do |imie|
+      puts "Witaj: #{imie.capitalize} w tescie Ruby !"
+    end
+  end
+end
+
+bl = Bloki_kodu.new
+puts bl.test
+puts bl.test_2
+puts bl.test_3
+
+
+puts " "
+puts " BLOKI KODU - ITERATORY"
+puts " "
+
+class Bloki_kodu_metody
+  def test    # Wyszukajmy elementy z pewnego zakresu danych
+    p (1..10).detect {|szukana| szukana == 5}
+  end
+  def test_2
+    p (1..10).detect {|szukana| szukana  > 5}
+  end
+
+  def test_3    # Wyszukajmy zadane elementy za pomocą metody find_all
+    p (1..10).find_all {|szukana| szukana >  5}
+  end
+
+  def test_4    # Wyszukajmy zadane elementy za pomocą metody any - czyli czy spelnia nasz wrunek
+    p (1..10).find_all {|szukana| szukana > 3}
+  end
+end
+
+bm = Bloki_kodu_metody.new
+puts bm.test
+puts " "
+puts bm.test_2
+puts " "
+print bm.test_3
+puts " "
+puts bm.test_4
