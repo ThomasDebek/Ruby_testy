@@ -484,3 +484,6 @@ inn = Incjet.new
 puts inn.test
 puts inn.test_2
 puts inn.test_3
+
+
+
