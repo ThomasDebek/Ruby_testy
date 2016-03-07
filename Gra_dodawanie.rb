@@ -1,3 +1,24 @@
+
+#Plan gry
+# 0. Szkielet klasy
+# 1. Wyczysc ekran
+# 2. Powitac gracza i wyswietlic podpowiedzi
+# 3. Zainicjować zmienne
+# 4. Wylosowac pierwszą liczbę
+# 5. Wylosować drugą liczbę
+# 6. Wyswietlic wylosowane liczby uzytkownikowi
+# 7. Obliczyć sumę wylosowanych liczb (pierwsza + druga)
+# 8. Pobrać wynik od uzytkownika
+# 9. Porównać wynik od uzytkownika z wynikiem wyliczenia
+# 10. Wyswietlic komunikat o: sukcesie , porażce
+# 11. Zaliczyc pnkt. uzytkownikowi (+ za dobrą odp,  - za zła odp.)
+# 12. Powtórzyc losowanie
+# 13. Zakączyc gre, jezeli uytkownik wpisze słowo koniec
+# 14. Jeżeli gra została zakączona, wyświetlić informacje o zdobytej punktacji
+
+
+
+
 class GraDodawanie
   def initialize
     system "cls"   # czyli wyczyscmy ekran
