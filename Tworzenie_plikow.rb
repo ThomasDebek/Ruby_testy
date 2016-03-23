@@ -20,5 +20,20 @@ p plik2.write "Ola ma kota"   # Ta metoda zwaraca nami informacjie ile mamy wpis
 p plik2.close
 
 
-
+puts "Odczytywanie pliku"
 # Odczytywanie pliku
+
+plik3 = File.new("test3.txt","r") # r - tylko do odczytu
+
+p plik3.gets.chomp  #chomp to usuniecie ostaniego elementu z linii
+p plik3.read(2)
+
+p plik3.close
+
+
+# Użyjmy petli do odczytu pliku
+File.open("test3.txt","r") do |plik|
+  while wiersz=plik.gets
+    puts wiersz.chomp
+  end
+end
