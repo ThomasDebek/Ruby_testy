@@ -37,3 +37,22 @@ File.open("test3.txt","r") do |plik|
     puts wiersz.chomp
   end
 end
+puts " "
+
+# WSKAŻNIK PLIKU  - mozemy powiedziec ze to nasz kursor
+puts "Wskaźnik pliku"
+
+
+p File.absolute_path(__FILE__)
+
+# Otweramy nasze irb w terminalu
+# plik = File.new("test3.txt", "r")
+# plik.pos
+# plik.read(6)
+# plik.gets
+# plik.pos=4
+# plik.eof ?
+# plik.rewind      czyli przewin
+# plik.pos+=10
+# plik.lineno      aktulana linja
+# plik.close       musimy go zamknąć
