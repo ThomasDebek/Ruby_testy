@@ -56,3 +56,38 @@ p File.absolute_path(__FILE__)
 # plik.pos+=10
 # plik.lineno      aktulana linja
 # plik.close       musimy go zamknąć
+
+
+
+puts " "
+puts "PORUSZANIE SIE PO PLIKU"
+
+#plik5 = File.new("test5.txt","r")   # zeby cos wpisac trzeba mu dac w-write
+
+#while wiersz=gets
+ # puts "wiersz #{plik5.lineno}: #{wiersz}"
+#end
+#plik5.close
+
+
+puts ""
+puts "PRACA Z PLIKAMI"
+
+plik77 = File.new("czytaj.txt", "w")   # Tworzymy sobie nowy plik
+plik77.puts"zmiana nazwy"              # Zmienmy nazwe tego pliku
+p plik77.close                         # Zamykamy i spr. czy sie strorzyl
+
+p File.rename("czytaj.txt", "czytaj_to.txt")   # Zmeinmy nazwe pliku na inną
+ # spróbujmy go skasowac
+
+
+p File.delete("czytaj_to.txt")    # Ruby pokaże nam 1 - czyli napewno został usunięty
+
+p File.absolute_path(__FILE__)
+puts "Aby móc kopiowac plik musimy uzyc modułu FileUtils"
+p "musimy zaladowac modul"
+p require 'FileUtils'   # Ładujemy modul
+ p FileUtils.copy("test.txt","test_copy/test_02.txt")
+
+puts ""
+puts "Work"
