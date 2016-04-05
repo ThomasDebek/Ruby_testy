@@ -91,3 +91,40 @@ p require 'FileUtils'   # Ładujemy modul
 
 puts ""
 puts "Work"
+
+
+
+puts ""
+puts "PRACA Z PLIKAMI -METODY"
+
+
+plikunio = "test.txt"
+p plikunio
+
+p File.dirname(plikunio)   # pokaze nam informacje - kropa, czyli znajduje sie w tym folderze gdzie jest plik
+
+puts "TU NAM POKAZE PELNĄ SCIEZKE DOSTEPU DO PLIKU"
+p File.expand_path(plikunio) # TU NAM POKAZE PELNĄ SCIEZKE DOSTEPU DO PLIKU
+
+
+p File.extname(plikunio) # Ale gdy chcem miec wyswietlane tylko metody tekstowe
+
+p File.size(plikunio)    # Wilkosc naszego pliku
+
+p File.atime(plikunio)  # Informacja o czasie utworzenia
+
+p File.mtime(plikunio) # Informacja o ostatnej modyfikacji  pliku
+
+p File.ctime(plikunio)
+
+p File.directory?(plikunio) # spr. czy nasz plik jest katalogiem
+
+p File.exist?(plikunio)   # spr. czy istnieje
+
+p File.readable?(plikunio) # spr. czy jest odczytywanlny
+
+p File.writable?(plikunio)  # spr. czy moge cos w nim zapisac
+
+p File.executable?(plikunio)# spr. czy plik tekstowy jest wykonywalny
+
+p File.executable?(plikunio)
