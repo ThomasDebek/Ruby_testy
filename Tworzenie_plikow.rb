@@ -128,3 +128,18 @@ p File.writable?(plikunio)  # spr. czy moge cos w nim zapisac
 p File.executable?(plikunio)# spr. czy plik tekstowy jest wykonywalny
 
 p File.executable?(plikunio)
+
+
+
+puts ""
+puts "Praca z folderami"
+
+puts "Wchodzimy do irb i wpisujemy"
+p "Dir.pwd   - pokaze nam pelną sciezke do katalogu w ktorym sie znajdujemy"
+p "Dir.chdir("..") - jezeli chce wyjsc do katalogu wyzje"
+# "Dir.chdir("jakis_katalog") - wejdzmy do katalogu"
+
+p "Dir.foreach('.'){|pozycja| puts pozycja} - Wyswietli nam calą zawartosć katalohu"
+p "Dir.mkdir('katalog_testowy') - tworzy nam katalog"
+p "Dir.delete('katalog_testowy') - usówa katalog"
+p "Dir.entries('.') - indexy naszej tablicy"
